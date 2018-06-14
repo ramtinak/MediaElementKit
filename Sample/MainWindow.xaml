@@ -1,0 +1,24 @@
+﻿<Window xmlns:MediaElementKit="clr-namespace:MediaElementKit;assembly=MediaElementKit"  x:Class="Sample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Sample"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <MediaElementKit:MediaElementPro x:Name="mediaElement"/>
+        <StackPanel Orientation="Horizontal" Grid.Row="1">
+            <Button Content="11111" Click="Button_Click"/>
+            <Button Content="22222" Click="Button_Click_1"/>
+            <Button Content="33333" Click="Button_Click_2"/>
+            <Button Content="44444" Click="Button_Click_3"/>
+            <Button Content="55555" Click="Button_Click_4"/>
+        </StackPanel>
+    </Grid>
+</Window>
