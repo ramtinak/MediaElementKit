@@ -427,31 +427,31 @@ new PropertyMetadata(default(double), BalancePropertyChanged));
 
 
         #region Poster Image Properties
-        public readonly static DependencyProperty PosterSourceProperty = DependencyProperty.Register(
- "PosterSource", typeof(Uri), typeof(MediaElementPro),
- new PropertyMetadata(null, SourcePropertyChanged));
-        public Uri PosterSource
-        {
-            get
-            {
-                return (Uri)GetValue(PosterSourceProperty);
-            }
-            set
-            {
-                SetValue(PosterSourceProperty, value);
-            }
-        }
-        private static void PosterSourcePropertyChanged(DependencyObject obj, DependencyPropertyChangedEventArgs e)
-        {
-            if (e.NewValue == null)
-                return;
-            var url = (Uri)e.NewValue;
-            try
-            {
-                //SetSource(url);
-            }
-            catch { }
-        }
+ //       public readonly static DependencyProperty PosterSourceProperty = DependencyProperty.Register(
+ //"PosterSource", typeof(Uri), typeof(MediaElementPro),
+ //new PropertyMetadata(null, SourcePropertyChanged));
+ //       public Uri PosterSource
+ //       {
+ //           get
+ //           {
+ //               return (Uri)GetValue(PosterSourceProperty);
+ //           }
+ //           set
+ //           {
+ //               SetValue(PosterSourceProperty, value);
+ //           }
+ //       }
+ //       private static void PosterSourcePropertyChanged(DependencyObject obj, DependencyPropertyChangedEventArgs e)
+ //       {
+ //           if (e.NewValue == null)
+ //               return;
+ //           var url = (Uri)e.NewValue;
+ //           try
+ //           {
+ //               //SetSource(url);
+ //           }
+ //           catch { }
+ //       }
 
         #endregion
 
